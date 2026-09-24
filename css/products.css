@@ -1,0 +1,57 @@
+.products {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 10px;
+  background-color: #2b2b2b;
+  .product {
+    min-width: 300px;
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: black;
+    background-color: lightgray;
+    .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 50%;
+        }
+    }
+    .description {
+        width: 100%;
+        text-align: center;
+        text-wrap: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .rating {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 10px;
+    }
+    .buyBtn {
+        all: unset;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        background-color: green;
+        border-radius: 10px;
+        box-shadow: 5px 5px 25px green;
+        color:  white;
+        cursor: pointer;
+    }
+  }
+}

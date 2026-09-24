@@ -1,0 +1,47 @@
+.main {
+  width: 100%;
+  margin-top: 40px;
+  table {
+    width: 100%;
+    thead {
+      tr {
+        background-color: lightgray;
+        th {
+          text-transform: capitalize;
+          color: black;
+          font-weight: bold;
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          text-align: center;
+          text-transform: capitalize;
+          padding: 10px;
+          box-sizing: border-box;
+          &.profile {
+            max-width: 100px;
+            img {
+              width: 40%;
+              border-radius: 50%;
+            }
+          }
+          .view {
+            all: unset;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            color: black;
+            background-color: rgb(239, 205, 52);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 500ms;
+            &:hover {
+                transform: scale(85%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
